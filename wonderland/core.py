@@ -11,6 +11,9 @@ def wirtschaft(y,z):
 def population(x,y,z):
     return x*(1.0+geburtenrate(y,z)-sterberate(y,z))
 
+def besser()
+    return 63
+
 def geburtenrate(y,z): 
     e = y_strich(BETA,y,z)
     return BETA1 * (BETA2 - e/(1.0+e))
