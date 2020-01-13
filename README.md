@@ -24,13 +24,13 @@ For trying out the different proposed scenarios, start a Python shell in this di
 
 ~~~python
 import wonderland as wl
-wl.plot_xzp(wl.Szenario(wl.Wonderland(wl.horror_parameter)))
+wl.plot_xzp(wl.Szenario(wl.Wonderland(wl.horror_parameters)).ergebnis)
 ~~~
 
 This will give you the *Environmentalist's Nightmare Scenario*. To switch to the *Economist's Dream Scenario*:
 
 ~~~python
-wl.plot_xzp(wl.Szenario(wl.Wonderland(wl.dream_parameter)))
+wl.plot_xzp(wl.Szenario(wl.Wonderland(wl.dream_parameters)).ergebnis)
 ~~~
 
 ## Testing
