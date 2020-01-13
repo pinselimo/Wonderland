@@ -45,7 +45,8 @@ class Wonderland:
 
         :param p: Aktuelle Technologie.
         """
-        return p*(1.0-self._PS['CHI'])
+        TAU = self._PS['TAU']
+        return p*(1.0-self._PS['CHI']-self._PS['CHI_0']*TAU/(1+TAU))
 
     def wirtschaft(self, y,z):
         """Berechnet die Wirtschaft des nächsten Wonderland-Jahres.
@@ -54,7 +55,9 @@ class Wonderland:
         :param z: Aktueller Umweltzustand
         """
         GAMMA = self._PS['GAMMA']
-        return y*(1.0+GAMMA-(GAMMA+self._PS['ETA'])*(1.0-z)**self._PS['LAMBDA'])
+        TAU = self._PS['TAU']
+        return y*(1.0+GAMMA-(GAMMA+self._PS['ETA']) \
+            *(1.0-z)**self._PS['LAMBDA']-self._PS['GAMMA_0']*(TAU/(1-TAU)))
 
     def population(self,x,y,z):
         """Berechnet die Bevölkerung des nächsten Wonderland-Jahres.
