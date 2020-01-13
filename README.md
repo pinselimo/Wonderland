@@ -41,7 +41,7 @@ To run the tests from this directory, open a shell in the environment you previo
 pytest tests/tests.py
 ~~~
 
-**Sources**
+**Sources** \
 [Sanderson, W.C. (1992). Simulation Models of Economic, Demographic, and Environmental Interactions: Are They on a Sustainable Development Path?. Laxenburg: International Institute for Applied Systems Analysis.](http://pure.iiasa.ac.at/id/eprint/3613/)
 
 [Milik, A., Prskawetz, A., Feichtinger, G. & Sanderson, W.C. (1996). Slow-fast dynamics in Wonderland. Environmental Modeling and Assessment, 1 (2), S. 3–17](http://pure.iiasa.ac.at/id/eprint/4854/)
