@@ -24,7 +24,7 @@ class ZustandsSammlung(Sequence):
         self._zustände.append(neuer_zustand)
         return None
 
-class Szenario:
+class Scenario:
     """Führt eine Simulation basierend auf einem
     Wonderland aus.
 
